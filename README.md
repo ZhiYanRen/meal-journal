@@ -26,7 +26,7 @@ PORT=0 npm start
 
 唯一公开仓库：https://github.com/ZhiYanRen/meal-journal 。主干 `main`，工作流 `.github/workflows/pages.yml`；Pages Source 为 GitHub Actions。推送后验证逻辑、构建、运行浏览器流程，再仅上传 `dist/` 并发布本仓库 Pages。支持 `workflow_dispatch`；PR 只验证不发布。无发布密钥或外部服务器。
 
-正式网站：首次部署与线上核验完成后补充。导航登记：应用岛 `app-island/public/projects.json`，首次发布前为准备中，核验正式网址后启用。
+正式网站：https://zhiyanren.github.io/meal-journal/ （已部署并通过线上浏览器验证）。导航登记：应用岛 `app-island/public/projects.json`，正式网站核验后同步启用。
 
 ## 边界
 

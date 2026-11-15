@@ -106,7 +106,7 @@
 
 ## 9. 餐记实际配置
 
-- 独立项目 /Users/yanren/Documents/github/meal-journal，唯一公开仓库 https://github.com/ZhiYanRen/meal-journal，main 开发，不建分支或 worktree。正式网址待首次发布核验后补充。
+- 独立项目 /Users/yanren/Documents/github/meal-journal，唯一公开仓库 https://github.com/ZhiYanRen/meal-journal，main 开发，不建分支或 worktree。正式网址 https://zhiyanren.github.io/meal-journal/ （已部署并通过线上浏览器验证）。
 - 原生 HTML/CSS/ES modules，无运行依赖，生产只使用静态文件及浏览器 IndexedDB/Cache Storage；不得新增服务端、外部数据库或上传照片接口。
 - Node 22.16+，npm ci；npm run check、npm test、npm run build、npm run test:browser、git diff --check。npm start 提供 dist 本地预览，静态产物仅 dist/。
 - .github/workflows/pages.yml，main push 自动验证构建，以 GITHUB_TOKEN 和最小权限通过 GitHub Actions 发布本仓库 Pages，PR 不发布。任务后仅提交本任务文件、自动推送、核对远程 SHA 与 CI/部署/线上结果，不泄漏照片及备份。

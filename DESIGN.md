@@ -27,23 +27,23 @@ spacing:
   page-max: "1440px"
 components:
   button:
-    backgroundColor: '{colors.primary}'
-    textColor: '{colors.surface}'
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.surface}"
   accent-button:
-    backgroundColor: '{colors.accent}'
+    backgroundColor: "{colors.accent}"
   danger-button:
-    backgroundColor: '{colors.danger}'
+    backgroundColor: "{colors.danger}"
   card:
-    textColor: '{colors.text}'
-    backgroundColor: '{colors.surface}'
+    textColor: "{colors.text}"
+    backgroundColor: "{colors.surface}"
   muted-text:
-    textColor: '{colors.muted}'
+    textColor: "{colors.muted}"
   breakfast-art:
-    backgroundColor: '{colors.peach}'
+    backgroundColor: "{colors.peach}"
   lunch-art:
-    backgroundColor: '{colors.mint}'
+    backgroundColor: "{colors.mint}"
   dinner-art:
-    backgroundColor: '{colors.lavender}'
+    backgroundColor: "{colors.lavender}"
   dialog: {}
 ---
 
