@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#245747" />
+    <meta
+      name="description"
+      content="餐记，用照片或文字记录每日三餐。日历回看、本机保存，让好好吃饭成为习惯。"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="餐记" />
+    <title>今日 · 餐记</title>
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳到主要内容</a>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#today" aria-label="餐记，回到今日"
+          ><img src="./assets/logo.svg" alt="" width="46" height="46" /><span
+            >餐记<small>每一餐，都值得记录</small></span
+          ></a
+        >
+        <p class="nav-caption">我的饮食手帐</p>
+        <nav id="navigation" aria-label="主要导航"></nav>
+        <div class="sidebar-bottom">
+          <div class="leaf-mark" aria-hidden="true">
+            <svg width="38" height="38" viewBox="0 0 40 40" fill="none">
+              <path
+                d="M8 33C8 17 18 6 33 6c1 18-6 28-21 22M9 31l14-14"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <strong>吃好每一餐<br />照顾每一天的自己。</strong>
+          <p>不必完美，坚持就很好。</p>
+          <span class="local-badge">● 记录只保存在本机</span>
+        </div>
+      </aside>
+      <main id="content" tabindex="-1">
+        <div class="loading" role="status">正在打开你的饮食手帐…</div>
+      </main>
+    </div>
+    <dialog id="editor" aria-labelledby="editor-title"></dialog>
+    <dialog
+      id="confirmation"
+      aria-labelledby="confirm-title"
+      aria-describedby="confirm-description"
+    ></dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <noscript
+      >请开启 JavaScript
+      后使用餐记。你的饮食记录保存在本机，不会上传。</noscript
+    >
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
